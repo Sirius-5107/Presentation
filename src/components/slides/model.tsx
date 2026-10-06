@@ -256,7 +256,7 @@ export function SlideValidation() {
       items: [
         "2,000 Monte Carlo trials per grid point",
         "Fixed seed 20261001",
-        "Monte Carlo confidence intervals computed in the underlying experiment",
+        "95% confidence intervals computed for binary systemic-failure probability",
         "Confidence intervals are not plotted here: trial-level variance is not stored in this presentation layer",
         "Common random numbers across the x sweep",
       ],
