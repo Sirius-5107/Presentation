@@ -137,8 +137,7 @@ export function SlideTradeoff() {
         </div>
       </div>
       <p className="mt-5 rounded-md bg-panel px-4 py-3 text-sm leading-normal text-cream/90 shadow-border">
-        The network externality of correlated risk-taking is much larger than that of isolated
-        risk-taking. Intensity and participation are not interchangeable instruments.
+        The network effect of widespread risk-taking can be much larger than its private benefit. Intensity and participation are not interchangeable instruments.
       </p>
     </div>
   );
