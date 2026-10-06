@@ -94,7 +94,7 @@ export function SlideExp2() {
         </div>
         <div className="grid grid-rows-3 gap-3">
           <Stat k="0.5045 → 0.5152" l="Aggregate equity" d="x = 0.05 → 0.95" />
-          <Stat k="0.0681 → 0.2259" l="Unpaid obligations" d="Min near x = 0.20" sand />
+          <Stat k="0.0681 → 0.2259" l="Unpaid obligations" d="Minimum near x = 0.20" sand />
           <Stat k="2.106%" l="Distressed banks" d="At x = 0.95" />
         </div>
       </div>
@@ -124,8 +124,7 @@ export function SlideTradeoff() {
           <p className="text-kicker font-medium uppercase tracking-kicker text-sand">Mixed</p>
           <p className="mt-2 font-display text-3xl tabular-nums text-cream">x ≈ 0.20</p>
           <p className="mt-4 text-sm leading-normal text-muted">
-            Unpaid obligations reach a grid minimum near here. Strategy mixing changes who is
-            exposed to whom. Reported as a grid observation, not a mixing theorem.
+            Unpaid obligations reach a grid minimum near here. The loss curve is non-monotone at low participation, then steepens markedly. Reported as a grid observation, not a mixing theorem.
           </p>
         </div>
         <div className="rounded-xl bg-panel p-5 shadow-border">
