@@ -137,10 +137,10 @@ export function SlideDynamics() {
             <Meta k="x0" v="0.50" />
             <Meta k="η" v="0.10" />
             <Meta k="qL, qR" v="0.20, 0.80" />
-            <Meta k="Steps × reps" v="20 × 100" />
+            <Meta k="Steps" v="20" />
           </div>
           <p className="text-sm leading-normal text-muted">
-            Illustrative population-dynamics extension using the measured payoff differential; not a behavioural calibration or convergence proof. The risky strategy had a small private payoff advantage; the population update is slow.
+            Illustrative population-dynamics extension using the measured payoff differential; not a behavioural calibration or convergence proof. The risky strategy had a small measured payoff advantage (Δπ = 0.0128); the illustrative population update is slow.
           </p>
         </div>
         <div className="flex min-h-0 flex-col rounded-xl bg-panel p-4 shadow-border">
