@@ -84,8 +84,7 @@ export function SlideQuestion() {
             distressed-bank fraction rise faster than private gains.
           </Hypothesis>
           <Hypothesis n="H2" title="Participation">
-            Raising the share <V>x</V> of high-risk institutions produces a larger network externality
-            than isolated high-risk behaviour — even if binary collapse stays at 0%.
+            Raising the share <V>x</V> of high-risk institutions increases network losses, with the increase becoming substantially steeper at high participation levels.
           </Hypothesis>
           <Hypothesis n="H3" title="Internalization">
             A system-aware objective <V>J</V> = <V>U</V> − λ<V>L</V> shifts the preferred tested{" "}
