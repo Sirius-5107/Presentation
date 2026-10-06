@@ -257,8 +257,8 @@ export function SlideValidation() {
         "2,000 Monte Carlo trials per grid point",
         "Fixed seed 20261001",
         "Monte Carlo confidence intervals computed in the underlying experiment",
-        "Monte Carlo confidence intervals are computed in the underlying experiment; this presentation does not plot them because the trial-level variance is not stored in the presentation data layer.
-        Common random numbers across the x sweep",
+        "Confidence intervals are not plotted here: trial-level variance is not stored in this presentation layer",
+        "Common random numbers across the x sweep",
       ],
     },
   ] as const;
