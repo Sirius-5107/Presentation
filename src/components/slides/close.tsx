@@ -140,9 +140,7 @@ export function SlideDynamics() {
             <Meta k="Steps × reps" v="20 × 100" />
           </div>
           <p className="text-sm leading-normal text-muted">
-            Discrete-time replicator as a computational population-dynamics analogue — not a
-            behavioural calibration, and not a convergence proof. The risky strategy had a small
-            private payoff advantage; the population update is slow.
+            Illustrative population-dynamics extension using the measured payoff differential; not a behavioural calibration or convergence proof. The risky strategy had a small private payoff advantage; the population update is slow.
           </p>
         </div>
         <div className="flex min-h-0 flex-col rounded-xl bg-panel p-4 shadow-border">
