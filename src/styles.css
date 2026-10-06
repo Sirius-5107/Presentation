@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #07141a;
+  --color-ink-2: #0c1f28;
+  --color-panel: #123038;
+  --color-panel-2: #183844;
+  --color-cream: #f3ece1;
+  --color-muted: #8aa3ab;
+  --color-subtle: #5e7880;
+  --color-line: color-mix(in oklab, #f3ece1 12%, transparent);
+  --color-line-strong: color-mix(in oklab, #f3ece1 22%, transparent);
+  --color-teal: #2f9d8f;
+  --color-teal-dim: #1e6e66;
+  --color-sand: #c9a56a;
+  --color-rose: #c45c4a;
+
+  --font-display: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3.15rem;
+  --text-5xl: 4rem;
+  --text-kicker: 0.72rem;
+  --text-slide: 2.15rem;
+
+  --leading-tight: 1.12;
+  --leading-snug: 1.28;
+  --leading-normal: 1.5;
+
+  --tracking-tight: -0.02em;
+  --tracking-display: -0.03em;
+  --tracking-kicker: 0.16em;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --shadow-border: 0 0 0 1px color-mix(in oklab, #f3ece1 8%, transparent);
+
+  --motion-stagger: 40ms;
+  --motion-micro: 80ms;
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+  --motion-medium: 350ms;
+  --motion-slow: 400ms;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-y-small: 6px;
+  --motion-y-base: 8px;
+  --motion-scale-modal: 0.96;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.slide-surface {
+  background:
+    radial-gradient(1200px 500px at 12% -10%, color-mix(in oklab, var(--color-teal) 16%, transparent), transparent 55%),
+    radial-gradient(900px 420px at 100% 110%, color-mix(in oklab, var(--color-sand) 8%, transparent), transparent 50%),
+    var(--color-ink);
+}
+
+.slide-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--color-cream) 55%, transparent) 0.6px, transparent 0.7px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 85%);
+}
+
+.slide-enter > * {
+  animation: slide-rise var(--motion-slow) var(--ease-smooth-out) both;
+}
+
+.slide-enter > *:nth-child(1) { animation-delay: 0ms; }
+.slide-enter > *:nth-child(2) { animation-delay: 60ms; }
+.slide-enter > *:nth-child(3) { animation-delay: 110ms; }
+.slide-enter > *:nth-child(4) { animation-delay: 160ms; }
+.slide-enter > *:nth-child(5) { animation-delay: 210ms; }
+
+@keyframes slide-rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--motion-y-base));
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.pressable:active:not(:disabled) {
+  scale: 0.96;
+}
+
+.compact-deck .title-ornament {
+  display: none;
+}
+
+.compact-deck .px-14 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.compact-deck .py-10,
+.compact-deck .py-12 {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.compact-deck .grid {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.compact-deck .h-full {
+  height: auto;
+  min-height: 0;
+}
+
+.compact-deck .justify-between {
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+.compact-deck .text-5xl {
+  font-size: 2.15rem;
+}
+
+.compact-deck .text-4xl {
+  font-size: 1.85rem;
+}
+
+.compact-deck .text-slide {
+  font-size: 1.55rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-enter > * {
+    animation: none;
+  }
+  .pressable:active:not(:disabled) {
+    scale: 1;
+  }
+}

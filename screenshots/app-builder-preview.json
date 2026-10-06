@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Adaptive Risk",
+      "hasCanvas": false,
+      "bodyTextLen": 436,
+      "bodyTextHash": "26cbbd2e58f24337526f9a40f3cc35d6d314529016130fb820a5a8f6db859ee2",
+      "bodyTextPrefix": "Himanshu Sahoo · IIT (BHU) Title IIT (BHU) · COMPUTATIONAL STUDY",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Adaptive Risk",
+      "hasCanvas": false,
+      "bodyTextLen": 436,
+      "bodyTextHash": "26cbbd2e58f24337526f9a40f3cc35d6d314529016130fb820a5a8f6db859ee2",
+      "bodyTextPrefix": "Himanshu Sahoo · IIT (BHU) Title IIT (BHU) · COMPUTATIONAL STUDY",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
