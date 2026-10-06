@@ -89,7 +89,7 @@ export function SlideQuestion() {
           <Hypothesis n="H3" title="Internalization">
             A system-aware objective <V>J</V> = <V>U</V> − λ<V>L</V> shifts the preferred tested{" "}
             (<V>q</V>
-            <Sub>R</Sub>, <V>x</V>) toward lower or interior grid values as λ increases.
+            <Sub>R</Sub> and <V>x</V> toward lower or interior grid values as λ increases.
           </Hypothesis>
         </div>
         <aside className="flex flex-col justify-between rounded-xl bg-panel p-5 shadow-border">
