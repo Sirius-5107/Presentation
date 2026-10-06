@@ -18,7 +18,7 @@ export function SlideExp1() {
           <IntensityChart className="flex-1" />
           <div className="mt-2 flex items-center justify-between">
             <ChartKey />
-            <p className="text-2xs text-subtle">Endpoints are exact MC values</p>
+            <p className="text-2xs text-subtle">All plotted points are exact MC values</p>
           </div>
         </div>
         <div className="grid grid-rows-3 gap-3">
